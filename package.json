@@ -34,9 +34,9 @@
     "env": {
       "node": true
     },
-    "eslint.workingDirectories": [
-      {"mode": "auto"}
-    ],
+    "parserOptions": {
+    "requireConfigFile": false
+    },
     "extends": [
       "plugin:vue/vue3-essential",
       "eslint:recommended",
