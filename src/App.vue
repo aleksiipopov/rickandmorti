@@ -1,12 +1,23 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view />
+  <MainBlock />
+  <!-- <HomeBlock /> -->
+  <!-- <nav><router-link to="/">Home</router-link></nav>
+  <router-view /> -->
 </template>
 
-<style lang="scss">
+<script>
+import MainBlock from "./views/MainBlock";
+// import HomeBlock from "./views/HomeBlock";
+
+export default {
+  components: {
+    MainBlock,
+    // HomeBlock,
+  },
+};
+</script>
+
+<!-- <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -27,4 +38,4 @@ nav {
     }
   }
 }
-</style>
+</style> -->
