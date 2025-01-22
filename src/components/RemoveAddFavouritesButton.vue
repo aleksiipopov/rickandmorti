@@ -22,6 +22,9 @@ export default {
   methods: {
     checkIsFavourite() {
       const arrayOfFavourites = JSON.parse(localStorage.getItem("favourites"));
+      if (!arrayOfFavourites) {
+        return;
+      }
       this.isFavoutire = arrayOfFavourites.includes(this.id);
     },
     addToFavourites(id) {
