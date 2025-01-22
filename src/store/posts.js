@@ -50,7 +50,7 @@ export default {
       state.infoPagination = pagination;
     },
     updateListOfFavourites(state, list) {
-      state.listOfFavourites = list;
+      state.listOfFavourites = list ? list : [];
     },
   },
   actions: {
